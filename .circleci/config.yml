@@ -50,8 +50,8 @@ jobs:
             # Determine latest Chromedriver version and download
             CHROME_VERSION=$(google-chrome --version | grep -oP '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+')
             wget -N https://storage.googleapis.com/chrome-for-testing-public/$CHROME_VERSION/linux64/chromedriver-linux64.zip
-            unzip chromedriver_linux64.zip -d /usr/local/bin/
-            rm chromedriver_linux64.zip
+            unzip chromedriver-linux64.zip -d /usr/local/bin/
+            rm chromedriver-linux64.zip
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
